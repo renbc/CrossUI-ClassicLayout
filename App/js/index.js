@@ -78,7 +78,21 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("22.5em")
                 .setTop("7.5em")
                 .setZIndex(1002)
-                .setSrc("https://www.crossui.com/RAD/img/svg_demo.svg"),
+                .setSrc("https://www.crossui.com/RAD/img/svg_demo.svg")
+                .onClick([
+                    {
+                        "desc":"动作 1",
+                        "type":"other",
+                        "target":"msg",
+                        "args":[
+                            "这是一个在线开发的消息框测试",
+                            "这是一个测试",
+                            200,
+                            5000
+                        ],
+                        "method":"message"
+                    }
+                ]),
                 "main"
             );
             
