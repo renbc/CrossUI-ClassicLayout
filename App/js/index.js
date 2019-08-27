@@ -76,7 +76,9 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image5")
                 .setLeft("16.666666666666668em")
-                .setTop("7.5em")
+                .setTop("5.833333333333333em")
+                .setWidth("12.5em")
+                .setHeight("20em")
                 .setZIndex(1003)
                 .setSrc("https://www.crossui.com/RAD/img/svg_demo.svg")
                 .onClick([
@@ -113,6 +115,17 @@ xui.Class('App', 'xui.Module',{
                     }
                 ]),
                 "before"
+            );
+            
+            host.ctl_layout13.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label16")
+                .setLeft("5.833333333333333em")
+                .setTop("14.166666666666666em")
+                .setWidth("5.583333333333333em")
+                .setHeight("10.333333333333334em")
+                .setCaption("123456"),
+                "main"
             );
             
             return children;
