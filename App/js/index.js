@@ -75,7 +75,7 @@ xui.Class('App', 'xui.Module',{
             host.ctl_layout13.append(
                 xui.create("xui.UI.Image")
                 .setHost(host,"xui_ui_image5")
-                .setLeft("22.5em")
+                .setLeft("16.666666666666668em")
                 .setTop("7.5em")
                 .setZIndex(1003)
                 .setSrc("https://www.crossui.com/RAD/img/svg_demo.svg")
@@ -93,6 +93,26 @@ xui.Class('App', 'xui.Module',{
                     "_xui_ui_image5_onclick"
                 ]),
                 "main"
+            );
+            
+            host.ctl_layout13.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button8")
+                .setLeft("1.6666666666666667em")
+                .setTop("0.8333333333333334em")
+                .setCaption("这是一个按钮")
+                .onClick([
+                    {
+                        "desc":"动作 1",
+                        "type":"other",
+                        "target":"url",
+                        "args":[ ],
+                        "method":"selectFile",
+                        "onOK":0,
+                        "event":1
+                    }
+                ]),
+                "before"
             );
             
             return children;
