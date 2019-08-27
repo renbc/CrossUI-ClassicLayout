@@ -77,6 +77,7 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_ui_image5")
                 .setLeft("22.5em")
                 .setTop("7.5em")
+                .setZIndex(1002)
                 .setSrc("https://www.crossui.com/RAD/img/svg_demo.svg"),
                 "main"
             );
